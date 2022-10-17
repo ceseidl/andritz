@@ -47,8 +47,8 @@ namespace Graph
             List<string> path = new List<string>();
             string next = origem;
             int indice = 0;
-            //while (Nos.Count >= indice )
-            while(true)
+            while (Nos.Count >= indice )
+            //while(true)
             {
                
                 No node = Nos.FirstOrDefault(p => p.ToString().Equals(next));
@@ -78,6 +78,7 @@ namespace Graph
                         break;
                     }
                 }
+                indice++;
                
             }
 
